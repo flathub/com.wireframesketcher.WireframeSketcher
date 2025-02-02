@@ -1,7 +1,7 @@
 {
   "id": "com.wireframesketcher.WireframeSketcher",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "46",
+  "runtime-version": "47",
   "sdk": "org.gnome.Sdk",
   "command": "WireframeSketcher",
   "separate-locales": false,
@@ -15,7 +15,8 @@
     "--filesystem=home",
     "--share=network",
     "--share=ipc",
-    "--socket=x11",
+    "--socket=wayland",
+    "--socket=fallback-x11",
     "--device=dri"
   ],
   "modules": [
@@ -35,16 +36,12 @@
         },
         {
           "type": "file",
-          "path": "appdata.patch"
-        },
-        {
-          "type": "file",
           "dest-filename": "sketcher.deb",
-          "url": "http://cdn.wireframesketcher.com/studio/dist/WireframeSketcher-7.2.1_amd64.deb",
+          "url": "http://cdn.wireframesketcher.com/studio/dist/WireframeSketcher-7.2.2_amd64.deb",
           "only-arches": [
             "x86_64"
           ],
-          "sha256": "aa4c543d93f31af61f282569c5baf9ba9fa4fefc3afe9497cd8f594bd539af8d"
+          "sha256": "473e28ae430ce4723770ce9a26f886717553525d04cf06b0a9f9933d4843c646"
         },
         {
           "type": "file",

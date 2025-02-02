@@ -19,8 +19,6 @@ install -Dm644 flatpak-dev-shim.so ${FLATPAK_DEST}/lib/libflatpakdevshim.so
 mkdir ${FLATPAK_DEST}/bin
 ln -s ${FLATPAK_DEST}/WireframeSketcher/WireframeSketcher ${FLATPAK_DEST}/bin/WireframeSketcher
 
-patch ${FLATPAK_DEST}/share/appdata/wireframesketcherstudio.appdata.xml appdata.patch
-
 desktop-file-edit --set-key=Exec --set-value=WireframeSketcher --set-key=TryExec --set-value=WireframeSketcher ${FLATPAK_DEST}/share/applications/wireframesketcherstudio.desktop 
 
 INI_FILE=${FLATPAK_DEST}/WireframeSketcher/WireframeSketcher.ini
