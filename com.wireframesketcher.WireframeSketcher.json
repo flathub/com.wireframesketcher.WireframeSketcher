@@ -1,7 +1,7 @@
 {
   "id": "com.wireframesketcher.WireframeSketcher",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "47",
+  "runtime-version": "48",
   "sdk": "org.gnome.Sdk",
   "command": "WireframeSketcher",
   "separate-locales": false,
@@ -17,7 +17,9 @@
     "--share=ipc",
     "--socket=wayland",
     "--socket=fallback-x11",
-    "--device=dri"
+    "--socket=ssh-auth",
+    "--device=dri",
+    "--talk-name=org.freedesktop.secrets"
   ],
   "modules": [
     {
@@ -37,22 +39,22 @@
         {
           "type": "file",
           "dest-filename": "sketcher.deb",
-          "url": "http://cdn.wireframesketcher.com/studio/dist/WireframeSketcher-7.2.2_amd64.deb",
+          "url": "http://cdn.wireframesketcher.com/studio/dist/WireframeSketcher-7.3.0_amd64.deb",
           "only-arches": [
             "x86_64"
           ],
-          "sha256": "473e28ae430ce4723770ce9a26f886717553525d04cf06b0a9f9933d4843c646"
+          "sha256": "f333758ecadd17e432473cc7b9130a8b7033aed54278498f55356a4356ccc7ac"
         },
         {
           "type": "file",
-          "url": "https://repo.eclipse.org/content/repositories/linuxtools/org/eclipse/linuxtools/flatpak/flatpak-dev-shim/1.0.1-SNAPSHOT/flatpak-dev-shim-1.0.1-20211216.040236-6.jar",
-          "sha256": "4ad46178d0c288a8a117034aad19f2373811748860b5c460f37e8335ea44ad4e",
+          "url": "https://wireframesketcher.com/flatpak/flatpak-dev-shim-1.0.1-20250331.142442-15.jar",
+          "sha256": "adf2c7210b3b42da6d35b075b9759adc7644d71fd1f8819ab751754e596b819e",
           "dest-filename": "flatpak-dev-shim.jar"
         },
         {
           "type": "file",
-          "url": "https://repo.eclipse.org/content/repositories/linuxtools/org/eclipse/linuxtools/flatpak/flatpak-dev-shim/1.0.1-SNAPSHOT/flatpak-dev-shim-1.0.1-20211216.040236-6.so",
-          "sha256": "345473289c3fae35074d5659e31898c8a90351b507d5361b95400c741e49f7a8",
+          "url": "https://wireframesketcher.com/flatpak/flatpak-dev-shim-1.0.1-20250331.142442-15.so",
+          "sha256": "6460250a44558e8ccb475705a40273eb0065e8cf746839ff5f502fc184d2c3df",
           "dest-filename": "flatpak-dev-shim.so"
         }
       ]
