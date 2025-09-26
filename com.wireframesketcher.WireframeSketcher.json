@@ -47,14 +47,35 @@
         },
         {
           "type": "file",
+          "dest-filename": "sketcher.deb",
+          "url": "http://cdn.wireframesketcher.com/studio/dist/WireframeSketcher-7.4.0_arm64.deb",
+          "only-arches": [
+            "aarch64"
+          ],
+          "sha256": "50cf4865cf35a9326dc31cdb274195c1e863f40f5f502807e262d9e4bb7fb641"
+        },
+        {
+          "type": "file",
           "url": "https://wireframesketcher.com/flatpak/flatpak-dev-shim-1.0.1-20250331.142442-15.jar",
           "sha256": "adf2c7210b3b42da6d35b075b9759adc7644d71fd1f8819ab751754e596b819e",
           "dest-filename": "flatpak-dev-shim.jar"
         },
         {
           "type": "file",
-          "url": "https://wireframesketcher.com/flatpak/flatpak-dev-shim-1.0.1-20250331.142442-15.so",
+          "url": "https://wireframesketcher.com/flatpak/flatpak-dev-shim-1.0.1-20250331.142442-15.amd64.so",
+          "only-arches": [
+            "x86_64"
+          ],
           "sha256": "6460250a44558e8ccb475705a40273eb0065e8cf746839ff5f502fc184d2c3df",
+          "dest-filename": "flatpak-dev-shim.so"
+        },
+        {
+          "type": "file",
+          "url": "https://wireframesketcher.com/flatpak/flatpak-dev-shim-1.0.1-20250331.142442-15.arm64.so",
+          "only-arches": [
+            "aarch64"
+          ],
+          "sha256": "3e21e098eab324afce4aed1249afb75d7a74decb0b0a18ff3d7198a166ae0fab",
           "dest-filename": "flatpak-dev-shim.so"
         }
       ]
