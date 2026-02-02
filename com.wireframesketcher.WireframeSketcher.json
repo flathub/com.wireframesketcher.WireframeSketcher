@@ -39,20 +39,20 @@
         {
           "type": "file",
           "dest-filename": "sketcher.deb",
-          "url": "http://cdn.wireframesketcher.com/studio/dist/WireframeSketcher-7.4.1_amd64.deb",
+          "url": "http://cdn.wireframesketcher.com/studio/dist/WireframeSketcher-7.4.2_amd64.deb",
           "only-arches": [
             "x86_64"
           ],
-          "sha256": "f6e825fab16006764b64aa7065a70d43239f849c0c2e34ddc04ce902015e2665"
+          "sha256": "48e839494a1cfc3b4968793859ad903886f9715a55b45c04bff0527cd80151f7"
         },
         {
           "type": "file",
           "dest-filename": "sketcher.deb",
-          "url": "http://cdn.wireframesketcher.com/studio/dist/WireframeSketcher-7.4.1_arm64.deb",
+          "url": "http://cdn.wireframesketcher.com/studio/dist/WireframeSketcher-7.4.2_arm64.deb",
           "only-arches": [
             "aarch64"
           ],
-          "sha256": "d1dee7ab5be521c4007feed0399952beca70108ec7fe3b1f8bf4bccb4341b488"
+          "sha256": "fbe48a58433f69d9de645ec1a357891bddb221bc728530456722c89fd612ce7d"
         },
         {
           "type": "file",
